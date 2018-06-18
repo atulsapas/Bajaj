@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Default suite]">
+  <parameter name="COUNTRY" value="IN"/>
+  <parameter name="PlanValue" value="INR89"/>
+  <parameter name="USER_TYPE" value="FREE"/>
+  <parameter name="PlanType" value="1Month"/>
+  <test verbose="2" name="Default test">
+    <parameter name="COUNTRY" value="IN"/>
+    <parameter name="PlanValue" value="INR89"/>
+    <parameter name="USER_TYPE" value="FREE"/>
+    <parameter name="PlanType" value="1Month"/>
+    <classes>
+      <class name="tv.hooq.web.scripts.HOOQ_Web_ActiveUser_Subscription_CashCard"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <parameter name="COUNTRY" value="IN"/>
+    <parameter name="PlanValue" value="INR89"/>
+    <parameter name="USER_TYPE" value="FREE"/>
+    <parameter name="PlanType" value="1Month"/>
+    <classes>
+      <class name="tv.hooq.web.scripts.HOOQ_Web_ActiveUser_Subscription_CashCard">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterClass"/>
+          <include name="HOOQ_Web_ActiveUser_Subscription_CashCard"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tv.hooq.web.scripts.HOOQ_Web_ActiveUser_Subscription_CashCard -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51206" started-at="2018-06-18T12:37:54Z" finished-at="2018-06-18T12:38:45Z">
+    <groups>
+      <group name="regression">
+        <method signature="Bajaj_Capital_Blank_Credentials.Bajaj_Capital_Blank_Credentials()[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="Bajaj_Capital_Blank_Credentials" class="bajaj.web.scripts.Bajaj_Capital_Blank_Credentials"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Bajaj_Capital_Blank_Credentials.Bajaj_Capital_Blank_Credentials()[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="Bajaj_Capital_Blank_Credentials" class="bajaj.web.scripts.Bajaj_Capital_Blank_Credentials"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Default test" duration-ms="51206" started-at="2018-06-18T12:37:54Z" finished-at="2018-06-18T12:38:45Z">
+      <class name="bajaj.web.scripts.Bajaj_Capital_Blank_Credentials">
+        <test-method status="PASS" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="beforeSuite" is-config="true" duration-ms="76" started-at="2018-06-18T18:07:54Z" finished-at="2018-06-18T18:07:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6eeade6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="beforeTest" is-config="true" duration-ms="1559" started-at="2018-06-18T18:07:54Z" finished-at="2018-06-18T18:07:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6eeade6c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="beforeClass" is-config="true" duration-ms="13713" started-at="2018-06-18T18:07:55Z" finished-at="2018-06-18T18:08:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="beforeMethod" is-config="true" duration-ms="222" started-at="2018-06-18T18:08:09Z" finished-at="2018-06-18T18:08:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void bajaj.web.scripts.Bajaj_Capital_Blank_Credentials.Bajaj_Capital_Blank_Credentials() throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2018-06-18T18:08:09Z" finished-at="2018-06-18T18:08:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Bajaj_Capital_Blank_Credentials()[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="Bajaj_Capital_Blank_Credentials" duration-ms="21245" started-at="2018-06-18T18:08:09Z" description="Bajaj" finished-at="2018-06-18T18:08:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bajaj_Capital_Blank_Credentials -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="afterMethod" is-config="true" duration-ms="332" started-at="2018-06-18T18:08:31Z" finished-at="2018-06-18T18:08:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void bajaj.web.scripts.Bajaj_Capital_Blank_Credentials.Bajaj_Capital_Blank_Credentials() throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=Bajaj_Capital_Blank_Credentials status=SUCCESS method=Bajaj_Capital_Blank_Credentials.Bajaj_Capital_Blank_Credentials()[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="afterClass" is-config="true" duration-ms="14109" started-at="2018-06-18T18:08:31Z" finished-at="2018-06-18T18:08:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="afterTest" is-config="true" duration-ms="16" started-at="2018-06-18T18:08:45Z" finished-at="2018-06-18T18:08:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:bajaj.web.scripts.Bajaj_Capital_Blank_Credentials@a67c67e]" name="afterSuite" is-config="true" duration-ms="82" started-at="2018-06-18T18:08:45Z" finished-at="2018-06-18T18:08:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- bajaj.web.scripts.Bajaj_Capital_Blank_Credentials -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

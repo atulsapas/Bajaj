@@ -1,0 +1,4 @@
+18/06/2018 13:25:10	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		Staring the class
+18/06/2018 13:25:10	DEBUG	HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		In Before Class method inside TestEngineWeb.
+18/06/2018 13:25:26	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		Info: navigating URL : 'https://mutualfunds-dev.tk/'
+18/06/2018 13:25:44	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		Stopping the class

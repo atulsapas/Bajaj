@@ -1,0 +1,6 @@
+06/03/2018 12:24:53	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies-HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		Testcase executed on the Node IP: localhost
+06/03/2018 12:24:53	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies-HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		***** Dataprovider Iteration No: 1 : *****
+06/03/2018 12:25:15	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies-HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		Get text for Login Verification
+06/03/2018 12:25:19	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies-HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		No such element(By.xpath: //*[@id='card-block-form']/p[2]) found on 'A million stories for a billion people - HOOQ' page at https://www.hooq.tv/in/login-email' url.
+06/03/2018 12:25:26	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies-HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		No such element found XPATH: By.xpath: //*[@id='card-block-form']/p[2]
+06/03/2018 12:25:36	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies-HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		Stopping the class

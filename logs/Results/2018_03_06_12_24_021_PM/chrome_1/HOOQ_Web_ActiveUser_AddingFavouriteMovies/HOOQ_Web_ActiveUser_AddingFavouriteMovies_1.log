@@ -1,0 +1,4 @@
+06/03/2018 12:24:22	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		Staring the class
+06/03/2018 12:24:22	DEBUG	HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		In Before Class method inside TestEngineWeb.
+06/03/2018 12:24:32	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		Info: navigating URL : 'https://www.hooq.tv'
+06/03/2018 12:25:36	INFO 	HOOQ_Web_ActiveUser_AddingFavouriteMovies_1		Stopping the class

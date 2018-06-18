@@ -1,0 +1,2 @@
+TestcaseName,ItrationCount,JiraTCID,Status,DeviceName,Method Description,JiraTestCaseId,Owner,TestCaseType
+bajaj.web.scripts.Bajaj_Capital_Demo.HOOQ_Web_ActiveUser_AddingFavouriteMovies,1,,SKIP,windows-chrome,Bajaj,null,null,null

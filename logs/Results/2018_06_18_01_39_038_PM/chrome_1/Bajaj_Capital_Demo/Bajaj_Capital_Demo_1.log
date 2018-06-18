@@ -1,0 +1,4 @@
+18/06/2018 13:39:40	INFO 	Bajaj_Capital_Demo_1		Staring the class
+18/06/2018 13:39:40	DEBUG	Bajaj_Capital_Demo_1		In Before Class method inside TestEngineWeb.
+18/06/2018 13:39:48	INFO 	Bajaj_Capital_Demo_1		Info: navigating URL : 'https://mutualfunds-dev.tk/'
+18/06/2018 13:40:09	INFO 	Bajaj_Capital_Demo_1		Stopping the class
