@@ -18,7 +18,7 @@ import com.web.automation.pages.SugarCRMPage;
 import com.web.automation.pages.SugarContactsInput;
 import com.web.automation.utilities.CommonVariables;
 
-public class Bajaj_Capital_Blank_Credentials extends TestEngineWeb {
+public class Bajaj_Capital_Forgot_Credentials extends TestEngineWeb {
 
 	public String strBuildNo="";
 	private String testCaseFailureReason = "";
@@ -39,12 +39,13 @@ public class Bajaj_Capital_Blank_Credentials extends TestEngineWeb {
 		Bajaj = new BajajWorkflows(CommonVariables.CommonDriver.get());
 	}
 	@Test(description = "Bajaj", groups = { "smoke", "regression" })
-	public void Bajaj_Capital_Blank_Credentials() throws Throwable {
+	public void Bajaj_Capital_Forgot_Credentials() throws Throwable {
 		try {
 			Bajaj.Login();
-			Bajaj.Bajaj_Capital_Blank_Credentials();
+			Bajaj.Forgotpassword();	
+			Bajaj.loginwith();
 			Thread.sleep(10000);
-			
+			System.out.println("Valid Login is successful");
 		
 		}
 		catch (Exception e) {

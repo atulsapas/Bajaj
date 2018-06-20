@@ -194,5 +194,44 @@ public class BajajWorkflows extends BasePage {
 					}
 		}
 }
+	public void Forgotpassword() throws Throwable
+	{
+		/*if(actionLib.isElementPresent(HomePageLocators.forgotpwd,"Forgot password present"))
+		{
+			String strText=actionLib.getElementText(HomePageLocators.forgotpwd,"Password");
+			System.out.println(strText);
+			extentLogs.pass("Text Present", strText);
+		}
+		else
+		*/		{
+		actionLib.Click(HomePageLocators.forgotpwd, "Click on Continue");
+		{
+							}
+		actionLib.type(HomePageLocators.lblForgotMobilepwd, "8130538887","Enter  mobile number");
+		actionLib.Click(HomePageLocators.mobileconfirm, "Click on Continue");
+		Thread.sleep(60000);
+		actionLib.type(HomePageLocators.Entnewpwd, "Abc@1234","Enter  Password ");
+		actionLib.type(HomePageLocators.Entrenewpwd, "Abc@1234","Enter  Password ");
+		Thread.sleep(5000);
+		actionLib.Click(HomePageLocators.btncontinue, "Click on Continue");
+		}
+	}
+		public void loginwith() throws Throwable
+		{
+			
+			actionLib.type(HomePageLocators.EntEnterPhone,"8130538887","Phone number entered");
+			actionLib.type(HomePageLocators.EntPass,"Abc@1234","Password is entered");
+			actionLib.Click(HomePageLocators.BtnContinue, "Click on Continue");
+			Thread.sleep(1000);
+			actionLib.type(HomePageLocators.EntPAN,"BDPPD8989C","PAN ID is entered");
+			actionLib.type(HomePageLocators.EntDOB,"19011990","DOB is entered");
+			actionLib.Click(HomePageLocators.BtnContinuenew, "Click on Continue");
+						
+		}
+		
+	
 
-}
+		
+		}
+	
+
