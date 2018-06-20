@@ -44,7 +44,7 @@ public class Bajaj_Capital_Forgot_Credentials extends TestEngineWeb {
 			Bajaj.Login();
 			Bajaj.Forgotpassword();	
 			Bajaj.loginwith();
-			Thread.sleep(10000);
+			Thread.sleep(20000);
 			System.out.println("Valid Login is successful");
 		
 		}
