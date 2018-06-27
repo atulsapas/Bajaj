@@ -28,5 +28,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/E004401/Downloads/base64-2.3.7.jar/base64-2.3.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
