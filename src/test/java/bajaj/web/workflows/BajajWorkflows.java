@@ -16,10 +16,13 @@ import java.util.Set;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
@@ -222,16 +225,68 @@ public class BajajWorkflows extends BasePage {
 			actionLib.type(HomePageLocators.EntEnterPhone,"8130538887","Phone number entered");
 			actionLib.type(HomePageLocators.EntPass,"Abc@1234","Password is entered");
 			actionLib.Click(HomePageLocators.BtnContinue, "Click on Continue");
-			Thread.sleep(1000);
+			Thread.sleep(10000);
+			driver.quit();
+			/*
 			actionLib.type(HomePageLocators.EntPAN,"BDPPD8989C","PAN ID is entered");
 			actionLib.type(HomePageLocators.EntDOB,"19011990","DOB is entered");
 			actionLib.Click(HomePageLocators.BtnContinuenew, "Click on Continue");
-						
+			*/			
 		}
 		
-	
+		public void openUrl(String strURL)
+		{
+			System.out.println(strURL);
+			actionLib.OpenApplication(strURL);
+		}
+		
+		public void setupmainpage(BajajInput testData) throws Throwable
+		{
+			actionLib.Click(HomePageLocators.btngetstarted, "Click on Get started");
+			Thread.sleep(2000);
+			actionLib.Click(HomePageLocators.btngetgoin, "Click on Get Going");
+			actionLib.type(HomePageLocators.EntName,testData.Name,"NAME is entered");	
+			actionLib.Click(HomePageLocators.message, "Click on Get Going");
+			Thread.sleep(2000);
+			actionLib.Click(HomePageLocators.Entdob, "Click on Get Going");
+			Thread.sleep(2000);
+			actionLib.type(HomePageLocators.Entdob,testData.DOB,"DOB");
+			actionLib.Click(HomePageLocators.message, "Click on Get Going");
+			Thread.sleep(2000);
+			actionLib.Click(HomePageLocators.iconprice, "Click on Get Going");
+			actionLib.type(HomePageLocators.Entamount,testData.Salary,"AMOUNT is entered");
+			actionLib.Click(HomePageLocators.btncont, "Click on Get Going");
+			Thread.sleep(2000);
+			//Step 3
+			actionLib.Click(HomePageLocators.selectplan, "Click on Get Going");
+			actionLib.type(HomePageLocators.EntTargetName, testData.Name,"Enter on Get Going");
+			actionLib.Click(HomePageLocators.message1, "Click on Get Going");
+			actionLib.Click(HomePageLocators.btncont1, "Click on Continue");
+			Thread.sleep(2000);
+			//step 4 starts
+		
+			actionLib.Click(HomePageLocators.iconprice1, "Click on Icon");
+			actionLib.type(HomePageLocators.enticonprice1, testData.OnetimeInvestment,"Enter one time SIP");
+			
+			actionLib.Click(HomePageLocators.iconprice2, "Click on Icon");
+			actionLib.type(HomePageLocators.enticonprice2, testData.SIP,"Enter monthly SIP");
+			actionLib.Click(HomePageLocators.btncont2, "Click on Confirm");
+			//extentLogs.passWithScreenshot("Data Match Status", "Data successfully Match");
+		
+			
+			//verify
+			String strName=actionLib.getElementText(HomePageLocators.Lbltext, "Name");
+			System.out.println(strName);
+			if(strName.contains(testData.Name))
+			{
+				System.out.println("Name Match");
+				extentLogs.pass("Data Match Status", "Data successfully Match" + strName);
+				
+			}
+		}
+		
+		
+		}
 
-		
-		}
-	
+
 

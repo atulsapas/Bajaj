@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import bajaj.web.workflows.BajajInput;
 import bajaj.web.workflows.BajajWorkflows;
 
 import com.web.automation.accelerators.TestEngineWeb;
@@ -18,7 +19,7 @@ import com.web.automation.pages.SugarCRMPage;
 import com.web.automation.pages.SugarContactsInput;
 import com.web.automation.utilities.CommonVariables;
 
-public class Bajaj_Capital_Blank_Credentials extends TestEngineWeb {
+public class Bajaj_Capital_New_Quote extends TestEngineWeb {
 
 	public String strBuildNo="";
 	private String testCaseFailureReason = "";
@@ -28,6 +29,7 @@ public class Bajaj_Capital_Blank_Credentials extends TestEngineWeb {
 	Map<String, List<String>> testdata = null;
 	private ExtentLogs extentLogs = new ExtentLogs();
 	private BajajWorkflows Bajaj;
+	public BajajInput testData=new BajajInput();
 	boolean isLoginSuccessfull,isLogOutSuccessfull;
 	public void TestCaseStatus(Boolean status, String reason) {
 		if (status == false) {
@@ -37,14 +39,20 @@ public class Bajaj_Capital_Blank_Credentials extends TestEngineWeb {
 	@BeforeMethod(alwaysRun = true)
 	public void beforeMethod() throws Throwable {
 		Bajaj = new BajajWorkflows(CommonVariables.CommonDriver.get());
+	
 	}
 	@Test(description = "Bajaj", groups = { "smoke", "regression" })
-	public void Bajaj_Capital_Blank_Credentials() throws Throwable {
+	public void Bajaj_Web_Bajaj_Capital_Valid_Credentials() throws Throwable {
 		try {
-			Bajaj.Login();
-			Bajaj.Bajaj_Capital_Blank_Credentials();
-			Thread.sleep(10000);
-			
+			for(int i=1;i<=1;i++)
+			{
+				Bajaj.openUrl("https://mutualfunds-dev.tk/");
+				testData=testData.fnGetTestData(sheetPath, sheetName, i);
+				System.out.println(testData.Name);
+				Bajaj.setupmainpage(testData);
+				Thread.sleep(10000);
+				System.out.println("Valid Login is successful");
+			}
 		
 		}
 		catch (Exception e) {
