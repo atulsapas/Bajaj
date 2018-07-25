@@ -41,7 +41,7 @@ public class Bajaj_Capital_Blank_Credentials extends TestEngineWeb {
 	@Test(description = "Bajaj", groups = { "smoke", "regression" })
 	public void Bajaj_Capital_Blank_Credentials() throws Throwable {
 		try {
-			Bajaj.Login();
+			
 			Bajaj.Bajaj_Capital_Blank_Credentials();
 			Thread.sleep(10000);
 			

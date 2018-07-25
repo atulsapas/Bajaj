@@ -1,8 +1,11 @@
 package bajaj.web.testObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class HomePageLocators {
+
+
 
 	//Home page
 	public static By login=By.xpath(".//*[@id='navbarSupportedContent']/ul/li[5]/a");
@@ -17,7 +20,9 @@ public class HomePageLocators {
 	public static By lblPwdValidation=By.xpath("/html/body/app-root/app-login/section/div/div[1]/div[3]/h2");
 	public static By BtnContinue=By.xpath("/html/body/app-root/app-login/section/div/div[1]/div[4]/button");
 	public static By lblinvalidmessage=By.xpath("/html/body/app-root/app-login/section/div/div[1]/div[3]/p");
-	public static By lblinvalidphonemessage=By.xpath("/html/body/app-root/app-login/section/div/div[1]/div[2]/p");
+	public static By lblinvalidphonemessage=By.xpath("//p[@class='red animated bounceInUp delay-02']");
+	
+	
 	
 	//Forgot Password
 	public static By lblforgotpwd=By.xpath("/html/body/app-root/app-forgot-password/div/section/div/div/div[1]/h1");
@@ -69,7 +74,47 @@ public class HomePageLocators {
 	public static By AssetAllocation=By.xpath("/html/body/app-root/app-recomendation/section/div[3]/div/div[2]/div[2]/div[1]/ul/li[3]/a");
 	public static By Assetdetails=By.xpath("//*[@id='card-scroll']");
 	
-	
 
+	//Home page
 	
+	public static By Register=By.xpath("//*[@id=\"navbarSupportedContent\"]/ul/li[6]/a");
+	// Signup
+	public static By lblSignup=By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[1]/h1");
+	public static By lblthankstxt = By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[1]/h2");
+	public static By lblPStxt = By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[1]/p");
+	public static By lblEmail = By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[2]/h2");
+	public static By EntEmail = By.id("userEmail");
+	public static By lblmobno = By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[3]/h2");
+	public static By Entmobno = By.id("userMob");
+	public static By BtnCntu= By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[4]/button");
+	public static By lblAlReg= By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[5]/p");
+	public static By BtnLngNw= By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[5]/button");
+	public static By lblEmailvalidate=By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[2]/p");
+	public static By lblEntrMobile= By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[3]/p");
+	public static By InvEmail= By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[2]/p");
+
+	public static By lblInvalidMobile= By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[3]/p");
+	public static By lblWrngMobno = By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[3]/p");
+	public static By lblValideEmailtxt= By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[2]/p");
+	public static By lblRegValidationMssg = By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[3]/p");
+	public static By lblValidMobno = By.xpath("/html/body/app-root/app-sign-up/section/div/form/div/div[3]/p");
+
+	//Plan
+	
+	public static By COVERYOURBACK=By.id("RainyDayFundsub");
+	public static By INITTOWINIT=By.id("ReteirmentFundsub");
+	public static By SAVEYOURSAVINGS=By.id("BuildWealthsub");
+	public static By TAXPLANNING=By.id("TaxPlanningsub");
+	public static By DREAMBIG=By.id("CustomFund3sub");
+	
+	//Portfolio
+	public static By lblPortfolio = By.xpath("/html/body/app-root/app-dash-board/header[2]/nav/div/ul[1]/li[2]");
+	public static By linkAddexternal = By.xpath("/html/body/app-root/app-dash-board/app-dashboard-portfolio/div[2]/section[2]/div/div/div/div[1]/ul[2]/li[3]");
+	public static By Entfundname= By.name("searchString");
+	public static By btncontinue1 = By.xpath("//*[contains(@class,'btn btn-primary btn-orange')]");
+	public static By Date=By.id("dateOfInvestment");
+	public static By error = By.xpath("//*[@id='exampleModalCenter']/div/div/button/span/img");
+	
+	
+	//
 	}

@@ -44,12 +44,14 @@ public class Bajaj_Capital_New_Quote extends TestEngineWeb {
 	@Test(description = "Bajaj", groups = { "smoke", "regression" })
 	public void Bajaj_Web_Bajaj_Capital_Valid_Credentials() throws Throwable {
 		try {
-			for(int i=1;i<=1;i++)
+			for(int i=1;i<=4;i++)
 			{
-				Bajaj.openUrl("https://mutualfunds-dev.tk/");
+				Bajaj.openUrl("https://mf.bajajcapital.com/");
 				testData=testData.fnGetTestData(sheetPath, sheetName, i);
 				System.out.println(testData.Name);
+				Thread.sleep(30000);
 				Bajaj.setupmainpage(testData);
+				Bajaj.setupplan(testData);
 				Thread.sleep(10000);
 				System.out.println("Valid Login is successful");
 			}

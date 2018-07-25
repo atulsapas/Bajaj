@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import bajaj.web.workflows.BajajInput;
 import bajaj.web.workflows.BajajWorkflows;
 
 import com.web.automation.accelerators.TestEngineWeb;
@@ -23,11 +24,12 @@ public class Bajaj_Capital_Forgot_Credentials extends TestEngineWeb {
 	public String strBuildNo="";
 	private String testCaseFailureReason = "";
 	private boolean testCaseStatus = true;
-	protected String sheetPath = System.getProperty("user.dir").replace("\\", "/") + "/testdata/TestData.xlsx";
-	protected String sheetName = "Bajaj_1";
+	protected String sheetPath = System.getProperty("user.dir").replace("\\", "/") + "/testdata/TestData_BAJAJ.xlsx";
+	protected String sheetName = "Login";
 	Map<String, List<String>> testdata = null;
 	private ExtentLogs extentLogs = new ExtentLogs();
 	private BajajWorkflows Bajaj;
+	public BajajInput testData=new BajajInput();
 	boolean isLoginSuccessfull,isLogOutSuccessfull;
 	public void TestCaseStatus(Boolean status, String reason) {
 		if (status == false) {
@@ -41,12 +43,15 @@ public class Bajaj_Capital_Forgot_Credentials extends TestEngineWeb {
 	@Test(description = "Bajaj", groups = { "smoke", "regression" })
 	public void Bajaj_Capital_Forgot_Credentials() throws Throwable {
 		try {
-			Bajaj.Login();
-			Bajaj.Forgotpassword();	
-			Bajaj.loginwith();
+			for(int i=2;i<=4;i++)
+			{
+			Bajaj.openUrl("https://mutualfunds-dev.tk/");
+			testData=testData.fnGetLoginData(sheetPath, sheetName,i);
+			Bajaj.Forgotpassword(testData);
+			Bajaj.loginwith(testData);
 			Thread.sleep(10000);
 			System.out.println("Valid Login is successful");
-		
+			}
 		}
 		catch (Exception e) {
 			testCaseFailureReason = "Failed to complete Bajaj Web Script";

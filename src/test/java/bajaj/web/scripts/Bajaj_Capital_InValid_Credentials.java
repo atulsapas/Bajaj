@@ -41,7 +41,7 @@ public class Bajaj_Capital_InValid_Credentials extends TestEngineWeb {
 	@Test(description = "Bajaj", groups = { "smoke", "regression" })
 	public void Bajaj_Capital_InValid_Credentials() throws Throwable {
 		try {
-			Bajaj.Login();
+			
 			Bajaj.Bajaj_Capital_InValid_format_Password_Credentials();
 			Thread.sleep(10000);
 			//System.out.println("Valid Login is successful");
